@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from 'react-native/Libraries/Text/TextAncestor';
+//Step1 : setup redux
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider>
+      <View style={styles.container}>
+        <Text>Let's Build Uber app!</Text>
+        <Text>SK Imran Sabuj!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </Provider>
   );
 }
 
